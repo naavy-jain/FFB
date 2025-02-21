@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SESAS - Multi-Tasking Tool Blog</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: 'Poppins', sans-serif;
+                background: #f4f4f4;
+                color: #333;
+                line-height: 1.8;
+                padding: 20px;
+            }
+
+            .container {
+                max-width: 1000px;
+                margin: auto;
+                background: white;
+                padding: 20px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+            }
+
+            h1 {
+                color: #003366;
+                font-size: 2.2rem;
+                text-align: center;
+            }
+
+            p {
+                font-size: 1.1rem;
+                text-align: justify;
+            }
+
+            .section {
+                margin-bottom: 40px;
+            }
+
+            h2 {
+                color: #003366;
+                font-size: 1.8rem;
+                border-bottom: 2px solid #003366;
+                padding-bottom: 5px;
+                margin-bottom: 15px;
+            }
+
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 15px;
+            }
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+                margin-top: 15px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            img:hover {
+                transform: scale(1.05);
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .contact-form {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+
+            .contact-form button {
+                padding: 12px;
+                background: #003366;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+
+            .contact-form button:hover {
+                background: #005599;
+            }
+
+            /* Responsive Design */
+            @media screen and (max-width: 768px) {
+                h1 {
+                    font-size: 1.8rem;
+                }
+
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+
+                .gallery {
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+                h1 {
+                    font-size: 1.5rem;
+                }
+
+                h2 {
+                    font-size: 1.3rem;
+                }
+
+                p {
+                    font-size: 0.95rem;
+                }
+
+                img {
+                    margin-top: 10px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>SESAS - Sustainable Energy Storage Application System</h1>
+            <p>An Advanced Multi-Tasking Tool with Energy Protocol Management</p>
+
+            <div class="section">
+                <h2>Field of the Invention</h2>
+                <p>The SESAS is designed for tightening and loosening nuts and bolts while managing energy protocols and
+                    providing power backup. It operates under AC, DC, and no power conditions.</p>
+            </div>
+
+            <div class="section">
+                <h2>Background</h2>
+                <p>Traditional tools require manual effort or a dedicated power source. SESAS overcomes these
+                    limitations
+                    by ensuring operational flexibility regardless of power conditions.</p>
+            </div>
+
+            <div class="section">
+                <h2>Summary of the Invention</h2>
+                <p>SESAS integrates a microcontroller-based energy management system, an energy storage facility, and
+                    embedded tools to enhance functionality.</p>
+            </div>
+
+            <div class="section">
+                <h2>Illustrations</h2>
+                <div class="gallery">
+                    <img src="./assets/Image1_000.png" alt="Overall Design">
+                    <img src="./assets/Image1_007.png" alt="Various Parts">
+                    <img src="./assets/Image1_008.png" alt="Circuit System">
+                    <img src="./assets/Image1_005.png" alt="Interconnections">
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Product Images</h2>
+                <a href="product-gallery.html">
+                    <img src="./assets/Image1.png" alt="Product Image 1">
+                </a>
+                <p>Click the image to view the full gallery.</p>
+            </div>
+
+            <div class="section">
+                <h2>Patent Claims</h2>
+                <ul>
+                    <li>Microcontroller-based power switching</li>
+                    <li>BJT and MOSFET-based regulation</li>
+                    <li>Energy storage facility with real-time monitoring</li>
+                    <li>Adaptable energy flow management</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Contact Us</h2>
+                <p>Interested in investing or learning more? Reach out to us:</p>
+                <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
